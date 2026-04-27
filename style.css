@@ -1,0 +1,248 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigasi */
+.navigasi {
+    background-color: #496397;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: skyblue;
+    font-style: italic;
+}
+
+
+/* Banner */
+.banner {
+    background-color: #3b5998;
+    height: 100vh;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+    margin-top: 0;
+}
+
+.banner img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.button-selengkapnya {
+    width: 300px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button-selengkapnya:hover {
+    background-color: #496397;
+    color: white;
+    border: 2px solid white;
+}
+
+.about{
+    height: 100vh;
+    background-color: #3b5998;
+    color: white;
+    
+}
+
+.about-content{
+    margin: 3.5rem 20%;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.about img {
+    width: 180px;
+    border-radius: 10%;
+    border: 4px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.about h2{
+    padding: 1.2rem;
+}
+
+.about-text p{
+    text-align: left;
+    padding: 1.2rem;
+}
+
+.about-text a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.about span {
+    color: #ffd700;
+}
+
+/* Animasi Teks */
+.span-animasi::before {
+    content: "";
+    animation: gerak 8s infinite;
+}
+
+@keyframes gerak {
+    0% { content: "Selamat Datang"; }
+    50% { content: "Saya Febriansyah "; }
+    100% { content: "Terima Kasih"; }
+}
+
+/* Layout Kotak (Pendidikan & Skill) */
+.box-pendidikan, .box-skill, .box-kontak {
+    padding: 80px 0;
+    text-align: center;
+    color: #4d4d4d;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.box-item {
+    width: 300px;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.box-item:hover {
+    background-color: #496397;
+    color: white;
+}
+
+.box-item img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* Kontak */
+.box-kontak img {
+    width: 100px;
+    margin: 20px 0;
+}
+
+.contact-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 40px;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-card img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.contact-card h1 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.social {
+    margin-top: 15px;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4ca1af;
+    font-weight: bold;
+}
+
+.social a:hover {
+    color: #2c3e50;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer{
+    bottom: 0;
+}
